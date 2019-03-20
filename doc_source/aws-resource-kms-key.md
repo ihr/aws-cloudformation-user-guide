@@ -24,7 +24,7 @@ To declare this entity in your AWS CloudFormation template, use the following sy
     "[KeyPolicy](#cfn-kms-key-keypolicy)" : JSON object,
     "[KeyUsage](#cfn-kms-key-keyusage)" : String,
     "[PendingWindowInDays](#cfn-kms-key-pendingwindowindays)" : Integer,
-    "[Tags](#cfn-kms-key-tags)" : [ Resource Tag, ... ]
+    "[Tags](#cfn-kms-key-tags)" : [ [*Resource Tag*, ...](aws-properties-resource-tags.md), ... ]
   }
 }
 ```
@@ -41,7 +41,7 @@ Properties:
   [KeyUsage](#cfn-kms-key-keyusage): String
   [PendingWindowInDays](#cfn-kms-key-pendingwindowindays): Integer
   [Tags](#cfn-kms-key-tags):
-    - Resource Tag
+    - [*Resource Tag*](aws-properties-resource-tags.md)
 ```
 
 ## Properties<a name="w13ab1c21c10d174c17b9"></a>
@@ -87,7 +87,7 @@ Valid Range: Minimum value of 7\. Maximum value of 30\.
 `Tags`  <a name="cfn-kms-key-tags"></a>
 Specifies an arbitrary set of tags \(key–value pairs\) to associate with this key\. Use tags to manage your resources\.  
 *Required*: No  
-*Type*: [Resource Tag](aws-properties-resource-tags.md)  
+*Type*: List of [Resource Tag](aws-properties-resource-tags.md)  
 *Update requires*: [No interruption](using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
 
 ## Return Values<a name="w13ab1c21c10d174c17c11"></a>
